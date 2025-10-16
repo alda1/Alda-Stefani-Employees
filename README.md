@@ -1,9 +1,9 @@
 # AldaStefaniEmployees
 
 Steps for accessing the project locally:
-git clone https://github.com/username/repo.git
-cd repo
-npm install       # or yarn install
+git clone https://github.com/username/repo.git >
+cd repo >
+npm install       # or yarn install >
 ng serve  
 ______________________________________________________________________________________________________________________________
 1. For parsing csv I used Papa Parser, an efficient javascript library witch helps producing cleaner and more readable code.
