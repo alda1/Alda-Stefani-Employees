@@ -1,59 +1,28 @@
 # AldaStefaniEmployees
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+1. For parsing csv I used Papa Parser, an efficient javascript library witch helps producing cleaner and more readable code.
+(instead of using several built-in js functions for spliting each line and header of csv content).
+From a brief research it resulted very popular and it has a good community support. Latest upgrade made on 2024.
 
-## Development server
+2. For UI/UX design I used Angular Material library.
 
-To start a local development server, run:
+3. I used Signals, one of the latest angular features (Angular 16+), for storing the parsed csv content and all the computed values, based on the requirements.
 
-```bash
-ng serve
-```
+4. Regarding the supported date formats I have inserted the availability of these three standarts (A. ISO: YYYY-MM-DD, B. European: DD/MM/YYYY, C.USA: MM/DD/YYYY)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+5. I inserted three csv samples(first and third with results and second with no overlapping working days) inside src > assets folder of the project. 
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Important Notes**
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+I have applied software engineering principles and design patterns for maintainability and readability of codebase like:
+Seperation of concerns, 
+Single Responsibility of SOLID principles, 
+modularity, Single source of Truth,
+Dependency Injection, 
+Singlelton service class,
+Interface Segregation principle (by creating small focused representative Models) 
+Keep it Simple principle(without using advanced build-in js functions).
+Also on the template of the component i have used declerative control flows (@for and @if) instead of overloading structural directives(no extra imports required, it keeps light bundle size).
+ 
+   
