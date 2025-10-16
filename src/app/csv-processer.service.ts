@@ -21,7 +21,7 @@ export class CsvProcesserService {
       transformHeader: (header) => header.trim(), 
       transform: (value) => value.trim(), 
       complete: (result) => {
-        console.log('CSV parse result:', result.data);
+        //console.log('CSV parse result:', result.data);
         //Parsing csv data and converting to array of objects data structure
         const formattedData: Employee[] = result.data.map(item => ({
           EmpID: Number(item.EmpID),
